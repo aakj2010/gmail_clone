@@ -224,7 +224,7 @@ function Inbox() {
         <tbody className='tbody' >
           {
             Primary.map((product) => {
-              return <tr className='tr'style={{ borderBottom: '.5px solid black' }}>
+              return <tr className='tr' style={{ borderBottom: '.5px solid black' }}>
                 {/* <td>{product.id}</td> */}
                 <td className='tdbutton'>
                   <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
@@ -235,17 +235,14 @@ function Inbox() {
                 <td className='tdtitle' >{product.Title}</td>
                 <td className='tddummy' >{product.dummy}</td>
                 <td className='tdtime'>{product.TimeStamp}</td>
-                {/* <td className='tdunvisible'>
-                  <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
-                  <button className="tdbtn"><StarOutlineOutlinedIcon fontSize='small' /></button>
-                  <button className="tdbtn"><LabelImportantOutlinedIcon fontSize='small' /></button>
-                </td> */}
+
               </tr>
             })
           }
         </tbody>
       </table>
     </div>
+
   )
 }
 

@@ -2,7 +2,7 @@ button {
   cursor: pointer;
 }
 .mailview {
-    max-width: 100%;
+    width: 100%;
     height: 89vh;
     border-radius: 1.5%;
     overflow-y: scroll;

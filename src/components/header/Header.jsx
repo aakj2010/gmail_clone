@@ -14,7 +14,6 @@ function Header() {
     
     let context = useContext(ToggleContext)
 
-
     return (
         <div>
             <div className='header-container'>

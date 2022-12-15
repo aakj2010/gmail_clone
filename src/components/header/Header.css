@@ -1,9 +1,4 @@
-body {
-  background-color: #f6f8fc;
-  /* background-image: url('../images/gmail.png'); */
-}
-
-/* header Container */
+/* header Container Start*/
 .header-container {
   height: 4rem;
   width: 100vw;
@@ -120,9 +115,9 @@ body {
 }
 
 /* header right icons */
-.icons-wrapper{
-    width: 306px;
-    height: 48px;
+.icons-wrapper {
+  max-width: 306px;
+  height: 48px;
 }
 .icons-wrapper > button {
   display: inline;
@@ -142,14 +137,64 @@ body {
   background-color: #e2e2e2;
 }
 
-@media screen and (max-width: 600px) {
-    .search-wrapper {
-      display: none;
-    }
+@media screen and (max-width: 480px) {
+  .search-wrapper {
+    display: none;
   }
+  .sidebar{
+    display: none;
+  }
+}
 
-  @media screen and (max-width: 780px) {
-    .search-wrapper {
-      width: 600px;
-    }
+@media screen and (max-width: 768px) {
+  .search-wrapper {
+    padding: 0;
+    margin: 0;
+    width: auto;
   }
+  .search_bar{
+    padding: 0;
+    width: auto;
+  }
+  .search-input {
+    width: fit-content;
+  }
+  .icons-wrapper{
+    padding: 0;
+    margin: 0;
+    max-width: fit-content;
+  }
+  .icons-wrapper > button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .search-wrapper {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 0;
+    padding: auto;
+  }
+  .search_bar{
+    /* padding: 0; */
+    width: auto;
+  }
+  .search-input {
+    width: fit-content;
+  }
+  .icons-wrapper{
+    /* padding: 0;
+    margin: 0; */
+    max-width: fit-content;
+  }
+  .icons-wrapper > button {
+    /* padding-left: 0;
+    padding-right: 0; */
+  }
+}
+/* @media screen and (min-width: 1200px) {
+  .search-wrapper {
+    max-width: 600px;
+  }
+} */
