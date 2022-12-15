@@ -12,6 +12,9 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import ScheduleSendOutlinedIcon from '@mui/icons-material/ScheduleSendOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import NotInterestedRoundedIcon from '@mui/icons-material/NotInterestedRounded';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import AddIcon from '@mui/icons-material/Add';
 
 
 function SideBarMain() {
@@ -87,13 +90,20 @@ function SideBarMain() {
                                     <span className='menu-text'>Sheduled</span>
                                 </li>
                                 <li className='list-items'>
-                                    <ScheduleSendOutlinedIcon fontSize='small' />
+                                    <NotInterestedRoundedIcon fontSize='small' />
                                     <span className='menu-text'>Spam</span>
                                 </li>
-
                                 <li className='list-items'>
                                     <DeleteOutlineOutlinedIcon fontSize='small' />
                                     <span className='menu-text'>Bin</span>
+                                </li>
+                                <li className='list-items'>
+                                    <SettingsOutlinedIcon fontSize='small' />
+                                    <span className='menu-text'>Manage Labels</span>
+                                </li>
+                                <li className='list-items'>
+                                    <AddIcon fontSize='small' />
+                                    <span className='menu-text'>Create Label</span>
                                 </li>
                             </>
 

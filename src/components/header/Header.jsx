@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './Header.css';
+import './MediaQuery.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import gmail from '../images/gmail.png'
 import SearchIcon from '@mui/icons-material/Search';
