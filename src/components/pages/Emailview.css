@@ -53,8 +53,8 @@ button {
 }
 .tdbtn {
   color: #5f6368;
-  /* border: none; */
-  background: none;
+  border: none;
+  background: transparent;
   padding: 0.2rem;
 }
 .tdbtn:hover {

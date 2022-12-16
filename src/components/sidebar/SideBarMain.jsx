@@ -99,11 +99,11 @@ function SideBarMain() {
                                 </li>
                                 <li className='list-items'>
                                     <SettingsOutlinedIcon fontSize='small' />
-                                    <span className='menu-text'>Manage Labels</span>
+                                    <span className='menu-text'>Manage labels</span>
                                 </li>
                                 <li className='list-items'>
                                     <AddIcon fontSize='small' />
-                                    <span className='menu-text'>Create Label</span>
+                                    <span className='menu-text'>Create new label</span>
                                 </li>
                             </>
 

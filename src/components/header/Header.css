@@ -98,6 +98,7 @@
 }
 
 .search-input {
+  padding: .7rem .5rem;
   font-size: 16px;
   width: 568px;
   height: 20px;
@@ -107,7 +108,8 @@
 .search-input:focus {
   outline: none;
   border: none;
-  background-color: #f6f8fc;
+  /* background-color: #f6f8fc; */
+  background-color: #fff;
 }
 .search-bar > input {
   border: none;

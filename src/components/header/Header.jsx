@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Header.css';
 import './MediaQuery.css'
 import MenuIcon from '@mui/icons-material/Menu';
@@ -12,9 +12,9 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ToggleContext from '../Context/ToggleContext'
 
 function Header() {
-    
-    let context = useContext(ToggleContext)
 
+    let context = useContext(ToggleContext)
+    console.log(context.query);
     return (
         <div>
             <div className='header-container'>
@@ -34,8 +34,11 @@ function Header() {
                 <div className="search-wrapper " >
                     <div className="search_bar">
                         <button className='search-btn btn'><SearchIcon /></button>
-                        <input type='text' className='search-input' placeholder='Search in mails'
-                            style={{ border: 'none' }} />
+                        <input type='text' 
+                        className='search-input'
+                        placeholder='Search in mails'
+                        style={{ border: 'none' }}
+                        onChange={e => context.setQuery(e.target.value)} />
                         <button className='search-btn tune-btn'><TuneIcon /></button>
                     </div>
                 </div>
@@ -49,7 +52,7 @@ function Header() {
 
             </div>
 
-            
+
 
         </div>
 

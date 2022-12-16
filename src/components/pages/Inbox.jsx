@@ -3,8 +3,9 @@ import './Emailview.css'
 import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
 import CheckBoxOutlineBlankOutlinedIcon from '@mui/icons-material/CheckBoxOutlineBlankOutlined';
 import LabelImportantOutlinedIcon from '@mui/icons-material/LabelImportantOutlined';
+// import { social } from '../data/Primary'
 
-function Inbox() {
+function Inbox({data}) {
   const Primary = [
     {
       id: 1,
@@ -219,6 +220,30 @@ function Inbox() {
   ];
 
   return (
+    // <div className='tabledata mailview'>
+    //   <table>
+    //     <tbody className='tbody' >
+    //       {
+    //         data.map((item) => {
+    //           return <tr className='tr' style={{ borderBottom: '.5px solid black' }}>
+    //             {/* <td>{product.id}</td> */}
+    //             <td className='tdbutton'>
+    //               <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
+    //               <button className="tdbtn"><StarOutlineOutlinedIcon fontSize='small' /></button>
+    //               <button className="tdbtn"><LabelImportantOutlinedIcon fontSize='small' /></button>
+    //             </td>
+    //             <td className='tdcompany' >{item.company}</td>
+    //             <td className='tdtitle' >{item.Title}</td>
+    //             <td className='tddummy' >{item.dummy}</td>
+    //             <td className='tdtime'>{item.TimeStamp}</td>
+
+    //           </tr>
+    //         })
+    //       }
+    //     </tbody>
+    //   </table>
+    // </div>
+
     <div className='tabledata mailview'>
       <table>
         <tbody className='tbody' >
@@ -243,6 +268,7 @@ function Inbox() {
       </table>
     </div>
 
+    
   )
 }
 
