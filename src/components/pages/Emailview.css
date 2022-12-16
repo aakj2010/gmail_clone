@@ -2,11 +2,11 @@ button {
   cursor: pointer;
 }
 .mailview {
-    width: 100%;
-    height: 89vh;
-    border-radius: 1.5%;
-    overflow-y: scroll;
-  }
+  width: 100%;
+  height: 89vh;
+  border-radius: 1.5%;
+  overflow-y: scroll;
+}
 .tddummy {
   font-size: 14px;
   height: 20px;
@@ -41,21 +41,25 @@ button {
     -webkit-box-orient: vertical; */
 }
 .tdbutton {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  border: none;
+  /* padding: 0;
+  margin: 0;
+  color: #5f6368; */
 }
 
-.tabledata {
+/* .tabledata {
   overflow-y: scroll;
-}
+} */
 .tdbtn {
+  margin: 1px;
+  padding: .2rem; 
   color: #5f6368;
   border: none;
-  background: transparent;
-  padding: 0.2rem;
+  background-color: transparent;
 }
 .tdbtn:hover {
   border-radius: 50%;
@@ -66,9 +70,11 @@ button {
   border-bottom: 0.5px solid lightgrey;
 }
 tr {
+  height: 20px;
+  font-size: 16px;
   cursor: pointer;
-  /* box-shadow: 2px 2px 6px lightgrey; */
   border-bottom: 1px solid lightgrey;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .tr:hover {
   box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
@@ -76,17 +82,16 @@ tr {
 .tr:hover::before {
   content: "";
 }
-.tdtime{
+.tdtime {
   color: #5f6368;
   padding-left: 1rem;
   font-size: 12px;
   width: 4rem;
 }
-.tdunvisible{
+.tdunvisible {
   display: flex;
   visibility: collapse;
 }
-tr +.tdunvisible:hover{
+tr + .tdunvisible:hover {
   visibility: visible;
-} 
-
+}
