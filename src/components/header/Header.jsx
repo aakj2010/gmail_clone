@@ -14,7 +14,7 @@ import ToggleContext from '../Context/ToggleContext'
 function Header() {
 
     let context = useContext(ToggleContext)
-    console.log(context.query);
+    // console.log(context.query);
     return (
         <div>
             <div className='header-container'>

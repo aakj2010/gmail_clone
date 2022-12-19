@@ -632,3 +632,5 @@ export const SentData = [
     TimeStamp: "29 dec",
   },
 ];
+
+export const AllMail = parseInt(StarredData.length)+(InboxData.length)+(SentData.length)

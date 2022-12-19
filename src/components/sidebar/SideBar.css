@@ -4,11 +4,17 @@
   display: flex;
   background-color: #f8f8f8;
 }
+
 input#menu {
   display: none;
 }
 .link {
   text-decoration: none;
+}
+.link.hover {
+  text-decoration: none;
+  color: #000;
+  background-color: #000;
 }
 ul {
   margin: 0;
@@ -16,14 +22,22 @@ ul {
   width: 206px;
 }
 ul > li {
+  display: flex;
+  align-items: center;
   list-style: none;
   text-decoration: none;
   cursor: pointer;
 }
-.list-items > span {
+
+
+.list-items > span{
   color: #5f6368;
   padding-left: 0.5rem;
   font-size: 14px;
+}
+.list-items > span:hover {
+  color: #000;
+  font-weight: 500;
 }
 .list-items {
   position: relative;
@@ -41,7 +55,7 @@ ul > li {
   position: absolute;
   top: 23%;
   left: 80%;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 .list-items:hover {
   background-color: #2021240f;
@@ -49,6 +63,13 @@ ul > li {
   font-weight: 500;
   color: #000;
   border-radius: 20px 20px 20px 20px;
+}
+.menu-text:hover {
+  color: #000;
+  font-weight: 500;
+}
+.link > button.active {
+  background-color: #000;
 }
 /* SideBar Started */
 /* static sidebar left */
@@ -141,11 +162,6 @@ ul > li {
   /* border: 1px solid black; */
 }
 
-.sidebar-right {
-  width: 55px;
-  background-color: #f6f8fc;
-}
-
 /* mailview */
 .mailview {
   border-radius: 1rem;
@@ -158,6 +174,8 @@ ul > li {
 
 /* sidebar-right */
 .sidebar-right {
+  width: 55px;
+  background-color: #f6f8fc;
   margin-right: 0.5rem;
   float: right;
   position: static;
@@ -182,7 +200,6 @@ ul > li {
   border-radius: 50%;
   background-color: #b4d4fe;
 }
-
 
 /* RightBar Start */
 .rightbar {
