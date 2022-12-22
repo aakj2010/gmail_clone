@@ -633,4 +633,4 @@ export const SentData = [
   },
 ];
 
-export const AllMail = parseInt(StarredData.length)+(InboxData.length)+(SentData.length)
+export const AllMail = parseInt((StarredData.length)+(InboxData.length)+(SentData.length))

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './SideBar.css'
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
@@ -14,18 +14,12 @@ import ScheduleSendOutlinedIcon from '@mui/icons-material/ScheduleSendOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import NotInterestedRoundedIcon from '@mui/icons-material/NotInterestedRounded';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import AddIcon from '@mui/icons-material/Add';
 import { StarredData, InboxData, SentData, AllMail } from '../data/Primary'
 
 
 function SideBarMain() {
-    const [bgcolor, setBgcolor] = useState('black');
-    const [textcolor, setTextcolor] = useState('white');
-
-    function handleHighlightTab() {
-        setBgcolor('Red');
-        setTextcolor('black');
-    }
 
     const [show, setShow] = useState(false);
     const [innerText, setInnerText] = useState("More");
@@ -38,11 +32,6 @@ function SideBarMain() {
         show ? setClasst(<KeyboardArrowUpIcon />) : setClasst(<KeyboardArrowDownIcon />);
     }, [show]);
 
-    // let activeStyle = {
-    //     backgroundColor: '#000',
-    //     Color:'#fff'
-    // };
-
     return (
         <div>
             <input type='checkbox' id='menu' />
@@ -53,19 +42,21 @@ function SideBarMain() {
             </label>
             <nav>
                 <ul>
-                    <Link className='link active' exact to='inbox'  >
-                        <li className='list-items active' 
-                        onSelect={handleHighlightTab} style={{ backgroundColor: { bgcolor }, color: { textcolor } }} >
-                            <MailOutlinedIcon fontSize='small' />
-                            <span className='menu-text'>Inbox</span>
+
+                    <li className=''>
+                        <NavLink className='list-items' to='inbox'>
+                            <InboxOutlinedIcon fontSize='small' className='icon' />
+                            Inbox
                             <span className='mailcount'>{InboxData.length}</span>
-                        </li></Link>
-                    <Link className='link' to='starred' activeStyle={{ color: '#5754a8' }}>
-                        <li className='list-items active'>
-                            <StarOutlineOutlinedIcon fontSize='small' />
-                            <span className='menu-text'>Starred</span>
-                        </li></Link>
-                    <li className='list-items ' activeStyle={{ color: '#5754a8' }}>
+                        </NavLink>
+                    </li>
+                    <li className=''>
+                        <NavLink className='list-items' to='starred'>
+                            <StarOutlineOutlinedIcon fontSize='small' className='icon'/>
+                            Starred
+                        </NavLink>
+                    </li>
+                    <li className='list-items '>
                         <WatchLaterOutlinedIcon fontSize='small' />
                         <span className='menu-text'>Snooze</span>
                     </li>
@@ -73,11 +64,13 @@ function SideBarMain() {
                         <LabelOutlinedIcon fontSize='small' />
                         <span className='menu-text'>Important</span>
                     </li>
-                    <Link className='link' to='sent'>
-                        <li className='list-items active'>
-                            <SendOutlinedIcon fontSize='small' />
-                            <span className='menu-text'>Sent</span>
-                        </li></Link>
+
+                    <li className=''>
+                        <NavLink className='list-items' to='sent'>
+                            <SendOutlinedIcon fontSize='small' className='icon'/>
+                            Sent
+                        </NavLink>
+                    </li>
                     <li className='list-items'>
                         <InsertDriveFileOutlinedIcon fontSize='small' />
                         <span className='menu-text'>Drafts</span>
