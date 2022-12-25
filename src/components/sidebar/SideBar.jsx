@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
+import EmailIcon from '@mui/icons-material/Email';
 import ChatBubbleOutlinedIcon from '@mui/icons-material/ChatBubbleOutline';
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import VideocamOutlinedIcon from '@mui/icons-material/VideocamOutlined';
@@ -16,7 +16,7 @@ function SideBar() {
         <div className="sidebar">
             <div className='sidebar-left'>
                 <div className='left-icon active-dark'>
-                    <button className='active-dark'><MarkunreadOutlinedIcon fontSize='small' /></button>
+                    <button className='active-dark'><EmailIcon fontSize='small' /></button>
                     <span style={{ fontSize: '12px' }}>Mail</span>
                 </div>
                 <div className='left-icon'>

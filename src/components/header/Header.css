@@ -11,7 +11,7 @@
   color: #5f6368;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-content: center;
   /* display: grid;
   grid-template-columns: 270px 940px 1fr; */
