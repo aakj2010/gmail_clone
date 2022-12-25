@@ -23,7 +23,7 @@
   height: 48px;
   width: 238px;
   display: flex;
-  justify-content: center !important;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
 }
