@@ -11,10 +11,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header-container{
+    display: flex;
+  }
   .search-wrapper {
     padding: 0;
     margin: 0;
-    width: auto;
+    max-width: auto;
   }
   .search_bar {
     padding: 0;
@@ -32,10 +35,19 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .mailview{
+    max-width: auto;
+  }
+  #content{
+    flex: auto;
+  }
 }
 @media screen and (max-width: 1024px) {
+  .header-container{
+    display: flex;
+  }
   .search-wrapper {
-    width: auto;
+    max-width: auto;
     margin: auto;
     margin-left: 0;
     padding: auto;

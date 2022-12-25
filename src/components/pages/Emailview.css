@@ -7,7 +7,8 @@ button {
   border-radius: 1.5%;
   overflow-y: scroll;
   /* opacity: .8; */
-  background: transparent;
+  /* background: transparent; */
+  background-color: rgb(255, 255, 255, .3);
 }
 tr {
   width: 100%;
@@ -86,7 +87,7 @@ tr {
   /* padding-top: 0.5rem; */
   height: 32px;
   width: 32px;
-  color: #5f6368;
+  color: #444746;
   border: none;
   display: flex;
   justify-content: center;

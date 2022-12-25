@@ -5,45 +5,58 @@
   box-sizing: border-box;
   min-width: min-content;
   padding: 0.5rem;
-  /* background-color: #f6f8fc; */
-  background: transparent;
+  padding-left: 0;
+  padding-bottom: 0;
+  background-color: rgb(255, 255, 255, .3);
+  /* background-color: #fff;
+  opacity: .2; */
+  /* background: transparent; */
   /* opacity: .7; */
-  color: #5f6368;
+  /* color: #5f6368; */
+  color: #444746;
   /* display: flex;*/
   align-items: center;
   justify-content: space-between;
   align-content: center; 
   display: grid;
-  grid-template-columns: 240px 940px 1fr;
+  grid-template-columns: 238px 940px 1fr;
   font-size: 13px;
   line-height: 27px;
   text-decoration: none solid rgb(0, 0, 0);
+ 
 }
+
 .logowith-menu {
   height: 48px;
-  width: 238px;
+  width: 240px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
 }
 .menu-icon {
-  color: #5f6368;
-  height: 24px;
-  width: 24px;
-  margin: 0 10px .15rem 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255, .4);
+  /* opacity: .5; */
+  color: #000;
+  height: 64px;
+  width: 50px;
+  /* margin: 0 10px .15rem 2px; */
+  margin: 0;
   padding: 12px;
 }
-.menu-icon:hover {
+/* .menu-icon:hover {
   border-radius: 50%;
   background-color: #e2e2e2;
-}
+} */
 .btn {
   background-color: transparent;
   border: none;
   padding: 0;
   margin: 0;
-  color: #5f6368;
+  color: #444746;
 }
 .logo {
   height: 40px;
@@ -56,14 +69,18 @@
   font-size: 20px;
   line-height: 27px;
 }
+.logo > img{
+  opacity: 1;
+}
 
 /* serachbar */
 .search-wrapper {
   display: flex;
   align-items: center;
-  width: 940px;
+  max-width: 940px;
   height: 48px;
   padding: 0 30px 0 10px;
+  /* background-color: rgb(255, 255, 255, .3); */
   /* background-color: #fff; */
 }
 
@@ -85,7 +102,7 @@
   padding: 8px;
   height: 40px;
   width: 40px;
-  color: #5f6368;
+  color: #444746;
   border: none;
   background-color: transparent;
 }
@@ -139,7 +156,7 @@
   padding: 8px;
   height: 40px;
   width: 40px;
-  color: #5f6368;
+  color: #444746;
   border: none;
   background-color: transparent;
 }
