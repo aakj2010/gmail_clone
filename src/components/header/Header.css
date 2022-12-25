@@ -9,9 +9,9 @@
   background: transparent;
   /* opacity: .7; */
   color: #5f6368;
-  /* display: flex;
+  /* display: flex;*/
   align-items: center;
-  justify-content: space-between;*/
+  justify-content: space-between;
   align-content: center; 
   display: grid;
   grid-template-columns: 240px 940px 1fr;
