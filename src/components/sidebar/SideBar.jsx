@@ -3,13 +3,10 @@ import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import ChatBubbleOutlinedIcon from '@mui/icons-material/ChatBubbleOutline';
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import VideocamOutlinedIcon from '@mui/icons-material/VideocamOutlined';
-import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
-import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined';
 import ToggleContext from '../Context/ToggleContext'
 import Compose from './Compose';
-import RightBar from './RightBar';
+// import RightBar from './RightBar';
 import SideBarMain from './SideBarMain';
-import Primary from '../data/Primary';
 import './SideBar.css'
 
 function SideBar() {
@@ -18,8 +15,8 @@ function SideBar() {
     return (
         <div className="sidebar">
             <div className='sidebar-left'>
-                <div className='left-icon'>
-                    <button><MarkunreadOutlinedIcon fontSize='small' /></button>
+                <div className='left-icon active-dark'>
+                    <button className='active-dark'><MarkunreadOutlinedIcon fontSize='small' /></button>
                     <span style={{ fontSize: '12px' }}>Mail</span>
                 </div>
                 <div className='left-icon'>

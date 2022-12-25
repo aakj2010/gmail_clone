@@ -5,11 +5,14 @@
   box-sizing: border-box;
   min-width: min-content;
   padding: 0.5rem;
-  background-color: #f6f8fc;
+  /* background-color: #f6f8fc; */
+  background: transparent;
+  /* opacity: .7; */
   color: #5f6368;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
   /* display: grid;
   grid-template-columns: 270px 940px 1fr; */
   font-size: 13px;
@@ -20,13 +23,15 @@
   height: 48px;
   width: 238px;
   display: flex;
+  justify-content: center !important;
   align-items: center;
+  align-content: center;
 }
 .menu-icon {
   color: #5f6368;
   height: 24px;
   width: 24px;
-  margin: 0 10px 0 2px;
+  margin: 0 10px .15rem 2px;
   padding: 12px;
 }
 .menu-icon:hover {
@@ -43,6 +48,8 @@
 .logo {
   height: 40px;
   width: 109px;
+  padding-right: 3.5rem;
+  padding-left: 1rem;
   margin: 0 0 4px;
   display: flex;
   align-items: center;
@@ -120,11 +127,11 @@
 .icons-wrapper {
   max-width: 306px;
   height: 48px;
-}
-.icons-wrapper > button {
-  display: inline;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+.icons-wrapper > button {
   /* background: none; */
   /* margin: 3px; */
   padding: 8px;

@@ -7,7 +7,7 @@
 #content-wrapper {
   display: flex;
   flex-direction: row;
-  background-color: #f8f9fc;
+  /* background-color: #f8f9fc; */
   width: 100%;
   /* overflow-x: hidden; */
 }

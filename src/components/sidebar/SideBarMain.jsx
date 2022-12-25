@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import './SideBar.css'
-import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
 import WatchLaterOutlinedIcon from '@mui/icons-material/WatchLaterOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
@@ -16,7 +15,7 @@ import NotInterestedRoundedIcon from '@mui/icons-material/NotInterestedRounded';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import AddIcon from '@mui/icons-material/Add';
-import { StarredData, InboxData, SentData, AllMail } from '../data/Primary'
+import { InboxData, AllMail } from '../data/Primary'
 
 
 function SideBarMain() {
@@ -24,27 +23,26 @@ function SideBarMain() {
     const [show, setShow] = useState(false);
     const [innerText, setInnerText] = useState("More");
     const [classt, setClasst] = useState(<KeyboardArrowDownIcon />);
+    // const [isActive, setIsActive] = useState(false);
+
+
     const ShowMore = () => {
         setShow(!show)
     }
+
     useEffect(() => {
         show ? setInnerText("Less") : setInnerText("More");
         show ? setClasst(<KeyboardArrowUpIcon />) : setClasst(<KeyboardArrowDownIcon />);
+
     }, [show]);
 
     return (
-        <div>
-            <input type='checkbox' id='menu' />
-            <label className='icon' htmlFor='menu'>
-                <div className='menu'>
-
-                </div>
-            </label>
+        <div className='sidebar-main'>
             <nav>
                 <ul>
 
                     <li className=''>
-                        <NavLink className='list-items' to='inbox'>
+                        <NavLink className='list-items' exact={true} to='inbox'>
                             <InboxOutlinedIcon fontSize='small' className='icon' />
                             Inbox
                             <span className='mailcount'>{InboxData.length}</span>
@@ -52,33 +50,33 @@ function SideBarMain() {
                     </li>
                     <li className=''>
                         <NavLink className='list-items' to='starred'>
-                            <StarOutlineOutlinedIcon fontSize='small' className='icon'/>
+                            <StarOutlineOutlinedIcon fontSize='small' className='icon' />
                             Starred
                         </NavLink>
                     </li>
                     <li className='list-items '>
-                        <WatchLaterOutlinedIcon fontSize='small' />
-                        <span className='menu-text'>Snooze</span>
+                        <WatchLaterOutlinedIcon fontSize='small' className='icon' />
+                        Snooze
                     </li>
                     <li className='list-items' >
-                        <LabelOutlinedIcon fontSize='small' />
-                        <span className='menu-text'>Important</span>
+                        <LabelOutlinedIcon fontSize='small' className='icon' />
+                        Important
                     </li>
 
                     <li className=''>
                         <NavLink className='list-items' to='sent'>
-                            <SendOutlinedIcon fontSize='small' className='icon'/>
+                            <SendOutlinedIcon fontSize='small' className='icon' />
                             Sent
                         </NavLink>
                     </li>
                     <li className='list-items'>
-                        <InsertDriveFileOutlinedIcon fontSize='small' />
-                        <span className='menu-text'>Drafts</span>
+                        <InsertDriveFileOutlinedIcon fontSize='small' className='icon' />
+                        Drafts
                     </li>
 
                     <li className='list-items '>
-                        <LabelOutlinedIcon fontSize='small' />
-                        <span className='menu-text'>Categories</span>
+                        <LabelOutlinedIcon fontSize='small' className='icon' />
+                        Categories
                     </li>
                     <li className='list-items' onClick={ShowMore}>
                         {classt}

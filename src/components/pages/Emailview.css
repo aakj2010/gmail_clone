@@ -6,12 +6,32 @@ button {
   height: 89vh;
   border-radius: 1.5%;
   overflow-y: scroll;
+  /* opacity: .8; */
+  background: transparent;
+}
+tr {
+  width: 100%;
+  height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow-x: hidden;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: transparent;
+  /* border-bottom: .2px solid lightgrey; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.tr:hover {
+  box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
 }
 .tddummy {
   font-size: 14px;
   height: 20px;
   padding-left: 0.5rem;
   /* white-space: nowrap;*/
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -24,13 +44,19 @@ button {
   padding-right: 0.8rem;
   font-size: 16px;
   font-weight: 500;
-  width: 150px;
+  width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .tdtitle {
   padding-right: 0.8rem;
   font-size: 16px;
   font-weight: 500;
-  width: 200px;
+  width: 10rem;
   max-height: 3.6em;
   white-space: nowrap;
   overflow: hidden;
@@ -46,47 +72,38 @@ button {
   align-items: center;
   justify-content: center;
   border: none;
+  padding-left: .5rem;
+  margin-bottom: 0;
   /* padding: 0;
   margin: 0;
   color: #5f6368; */
 }
 
-/* .tabledata {
-  overflow-y: scroll;
-} */
 .tdbtn {
   font-size: 20px;
-  margin: 1px;
-  padding: .2rem;
-  padding-top: .5rem;
+  /* margin: 1px; */
+  /* padding: 0.2rem; */
+  /* padding-top: 0.5rem; */
+  height: 32px;
+  width: 32px;
   color: #5f6368;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
 }
 .tdbtn:hover {
   border-radius: 50%;
   background-color: #e2e2e2;
 }
-.tbody {
-  height: 20px;
-  border-bottom: 0.5px solid lightgrey;
-}
-tr {
-  height: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-bottom: 1px solid lightgrey;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-.tr:hover {
-  box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
-}
+
 .tr:hover::before {
   content: "";
 }
 .tdtime {
   color: #5f6368;
-  padding-left: 1rem;
+  padding-left:.5rem;
   font-size: 12px;
   width: 4rem;
 }

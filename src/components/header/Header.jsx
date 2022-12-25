@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import './Header.css';
 import './MediaQuery.css'
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import gmail from '../images/gmail.png'
 import SearchIcon from '@mui/icons-material/Search';
 import TuneIcon from '@mui/icons-material/Tune';
@@ -21,7 +21,7 @@ function Header() {
 
                 <div className='logowith-menu'>
                     <div className='menu-icon'>
-                        <button className='btn' onClick={context.ShowSideBar}><MenuIcon /></button>
+                        <button className='btn' onClick={context.ShowSideBar}><MenuRoundedIcon /></button>
                         {/* <span className='mainmenuhide'>Main menu</span> */}
                     </div>
 

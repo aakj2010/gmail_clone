@@ -33,7 +33,6 @@ function Inbox() {
           {
             FilteredData.map((product) => {
               return <tr className='tr' key={product.id} style={{ borderBottom: '.5px solid black' }}>
-                {/* <td>{product.id}</td> */}
                 <td className='tdbutton'>
                   <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
                   <button className="tdbtn"><StarOutlineOutlinedIcon fontSize='small' /></button>

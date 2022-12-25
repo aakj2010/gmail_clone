@@ -6,4 +6,12 @@ body {
   background-color: #f8f8f8;
   overflow-y: hidden;
   overflow-x: hidden;
+  /* background-image: url('../src/components/images/gmailbg6.jpg'); */
+  background-color: #f6f8fc;
+  /* background-repeat: no-repeat;
+  background-position: 100%; */
+}
+img{
+  /* width: 100%; */
+  height: auto;
 }
