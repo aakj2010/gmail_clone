@@ -125,15 +125,15 @@
 
 /* header right icons */
 .icons-wrapper {
-  width: 192px;
+  width: 172px;
   height: 48px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 .icons-wrapper > button {
   /* background: none; */
-  /* margin: 3px; */
+  margin: 3px;
   padding: 8px;
   height: 40px;
   width: 40px;
