@@ -1,6 +1,6 @@
 .sidebar {
   max-width: 280px;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   background-color: rgb(255, 255, 255, .3);
   /* background-color: rgb(255, 255, 255, .3); */
@@ -39,7 +39,7 @@ ul > li {
   padding-right: .5rem;
 }
 .active{
-  background-color: #dcdddf;
+  background-color:#8ac9f4;
   color: #000 !important;
   font-weight: 500;
   border-radius: 20px;
@@ -103,7 +103,7 @@ ul > li {
   /* height: 690px; */
   /* color: #444746; */
   color: #5f6368;
-  height: 90vh;
+  height: 95vh;
   max-width: 68px;
   min-width: 68px;
   /* background-color: #f6f8fc; */
@@ -140,7 +140,7 @@ ul > li {
 }
 .left-icon > button:hover {
   border-radius: 15px;
-  background-color: #dcdcdc;
+  background-color: #abd8f7;
 }
 
 /* Collapsible SideBar */
