@@ -11,14 +11,17 @@
   /* color: #5f6368; */
   color: #444746;
   /* display: flex;*/
-  align-items: center;
+
   display: grid;
-  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+  /* place-items: center; */
+  
   align-content: center;
-  grid-template-columns: 240px 940px 1fr;
+  grid-template-columns: 238px 940px 1fr;
   font-size: 13px;
   line-height: 27px;
-  text-decoration: none solid rgb(0, 0, 0);
+  /* text-decoration: none solid rgb(0, 0, 0); */
 }
 
 .logowith-menu {
@@ -37,7 +40,7 @@
   /* opacity: .5; */
   color: #000;
   height: 64px;
-  width: 50px;
+  width: 48px;
   /* margin: 0 10px .15rem 2px; */
   margin: 0;
   padding: 12px;

@@ -6,6 +6,7 @@ import Portal from './components/portal/Portal';
 import Inbox from './components/pages/Inbox'
 import Starred from './components/pages/Starred';
 import Sent from './components/pages/Sent';
+import '../src/components/header/MediaQuery.css'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         <ToggleProvider>
           <Routes>
             <Route path='/' element={<Portal />}>
-              <Route exact={true} path='inbox' element={<Inbox />} />
+              <Route exact="true" path='inbox' element={<Inbox />} />
               <Route path='starred' element={<Starred />} />
               <Route path='sent' element={<Sent />} />
             </Route>

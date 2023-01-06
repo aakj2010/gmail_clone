@@ -1,18 +1,36 @@
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
+  .header-container{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+  }
+  .logowith-menu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .search-wrapper {
-    display: none;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
   }
-  .sidebar {
-    display: none;
+   .search-input {
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
-  .search-input {
-    display: none;
+  .mailview{
+    width: fit-content;
   }
+  .sidebar{
+    width: auto;
+  }
+ 
 }
 
 @media screen and (max-width: 768px) {
   .header-container{
-    display: flex;
+    width: 100%;
   }
   .search-wrapper {
     padding: 0;

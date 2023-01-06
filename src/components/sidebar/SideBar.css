@@ -89,30 +89,22 @@ ul > li {
 .link:hover{
   color: #000;
 }
+
 /* SideBar Started */
 /* static sidebar left */
 .main {
   height: 90vh;
   display: flex;
-  /* display: grid;
-    grid-template-columns: 68px 256px 1fr 55px; */
-  /* grid-template-areas: ; */
 }
 
 .sidebar-left {
-  /* height: 690px; */
-  /* color: #444746; */
   color: #5f6368;
   height: 95vh;
   max-width: 68px;
   min-width: 68px;
   /* background-color: #f6f8fc; */
   background-color: rgb(255, 255, 255, .4);
-  /* background: transparent; */
-  /* opacity: .5; */
   margin-top: 1rem;
-  /* padding-top: 4rem; */
-  /* border: .5px solid lightgrey; */
 }
 .active-dark{
   font-weight: 500 !important;
@@ -192,7 +184,7 @@ ul > li {
 /* mailview */
 .mailview {
   border-radius: 1rem;
-  margin: 0 0.5rem 0 1rem;
+  margin: 0 0 0 0.5rem;
   width: 150vw;
   background-color: rgb(255, 255, 255, .3);
   /* background-color: #fff; */

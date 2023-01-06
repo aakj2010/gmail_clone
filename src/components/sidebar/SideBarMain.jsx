@@ -42,7 +42,7 @@ function SideBarMain() {
                 <ul>
 
                     <li className=''>
-                        <NavLink className='list-items' exact={true} to='inbox'>
+                        <NavLink className='list-items' exact="true" to='inbox'>
                             <InboxOutlinedIcon fontSize='small' className='icon' />
                             Inbox
                             <span className='mailcount'>{InboxData.length}</span>
