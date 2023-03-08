@@ -29,7 +29,7 @@ function Sent() {
         <div className='tabledata mailview'>
             <MetaData title={'Sent items'} />
             <table>
-                <tbody className='tbody' style={{ borderBottom: '.5px solid black' }}>
+                <tbody className='tbody' style={{ borderBottom: '.5px solid lightgrey' }}>
                     {
                         FilteredData.map((sent) => {
                             return <tr className='tr'>

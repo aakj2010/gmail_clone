@@ -54,7 +54,7 @@ function SideBarMain() {
                 <ul>
 
                     <li className="" onClick={inboxIcon}>
-                        <NavLink className='list-items' exact="true" to='inbox'>
+                        <NavLink className='list-items' to=''>
 
                             <InboxOutlinedIcon fontSize='small' className='icon' />
                             {/* {inbox} */}

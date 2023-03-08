@@ -35,7 +35,7 @@ function Starred() {
         <tbody className='tbody' >
           {
             FilteredData.map((email) => {
-              return <tr className='tr' key={email.id} style={{ borderBottom: '.5px solid black' }}>
+              return <tr className='tr' key={email.id} style={{ borderBottom: '.5px solid lightgrey' }}>
                 <td className='tdbutton'>
                   <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
                   <button className="tdbtn"><StarIcon fontSize='small' sx={{ color: yellow[500] }} /></button>

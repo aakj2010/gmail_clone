@@ -18,7 +18,7 @@ function App() {
           <ToggleProvider>
             <Routes>
               <Route path='/' element={<Portal />}>
-                <Route index path='inbox' element={<Inbox />} />
+                <Route path='' element={<Inbox />} />
                 <Route path='starred' element={<Starred />} />
                 <Route path='sent' element={<Sent />} />
               </Route>
