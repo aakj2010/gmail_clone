@@ -7,6 +7,7 @@ import LabelImportantOutlinedIcon from '@mui/icons-material/LabelImportantOutlin
 import { StarredData} from '../data/Primary'
 import ToggleContext from '../Context/ToggleContext'
 import { MdLabelImportantOutline} from 'react-icons/md';
+import MetaData from '../header/MetaData';
 
 function Starred() {
   let context = useContext(ToggleContext)
@@ -29,6 +30,7 @@ function Starred() {
 
   return (
     <div className='tabledata mailview'>
+      <MetaData title={'Starred'} />
       <table>
         <tbody className='tbody' >
           {

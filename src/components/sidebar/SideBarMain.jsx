@@ -14,6 +14,8 @@ import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined
 import NotInterestedRoundedIcon from '@mui/icons-material/NotInterestedRounded';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
+import InboxIcon from '@mui/icons-material/Inbox';
+
 import AddIcon from '@mui/icons-material/Add';
 import { InboxData, AllMail } from '../data/Primary'
 
@@ -23,27 +25,39 @@ function SideBarMain() {
     const [show, setShow] = useState(false);
     const [innerText, setInnerText] = useState("More");
     const [classt, setClasst] = useState(<KeyboardArrowDownIcon />);
+    const [inbox, setinbox] = useState(<InboxOutlinedIcon />)
+    const [inboxshow, setinboxShow] = useState(false);
     // const [isActive, setIsActive] = useState(false);
 
 
     const ShowMore = () => {
         setShow(!show)
+
+    }
+
+    const inboxIcon = () => {
+        setinboxShow(!inboxshow)
     }
 
     useEffect(() => {
         show ? setInnerText("Less") : setInnerText("More");
         show ? setClasst(<KeyboardArrowUpIcon />) : setClasst(<KeyboardArrowDownIcon />);
+        // show ? setClasst(<InboxOutlinedIcon />) : setClasst(<InboxIcon />);
+        inboxshow ? setinbox(<InboxOutlinedIcon />) : setinbox(<InboxIcon />);
 
-    }, [show]);
+
+    }, [show, inboxshow]);
 
     return (
         <div className='sidebar-main'>
             <nav>
                 <ul>
 
-                    <li className=''>
+                    <li className="" onClick={inboxIcon}>
                         <NavLink className='list-items' exact="true" to='inbox'>
+
                             <InboxOutlinedIcon fontSize='small' className='icon' />
+                            {/* {inbox} */}
                             Inbox
                             <span className='mailcount'>{InboxData.length}</span>
                         </NavLink>

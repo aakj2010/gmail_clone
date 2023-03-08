@@ -7,23 +7,25 @@ import Inbox from './components/pages/Inbox'
 import Starred from './components/pages/Starred';
 import Sent from './components/pages/Sent';
 import '../src/components/header/MediaQuery.css'
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        <ToggleProvider>
-          <Routes>
-            <Route path='/' element={<Portal />}>
-              <Route exact="true" path='inbox' element={<Inbox />} />
-              <Route path='starred' element={<Starred />} />
-              <Route path='sent' element={<Sent />} />
-            </Route>
-          </Routes>
-        </ToggleProvider>
+        <HelmetProvider>
+          <ToggleProvider>
+            <Routes>
+              <Route path='/' element={<Portal />}>
+                <Route index path='inbox' element={<Inbox />} />
+                <Route path='starred' element={<Starred />} />
+                <Route path='sent' element={<Sent />} />
+              </Route>
+            </Routes>
+          </ToggleProvider>
+        </HelmetProvider>
       </BrowserRouter>
-
     </div>
   );
 }

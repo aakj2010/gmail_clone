@@ -18,7 +18,6 @@ function Header() {
     return (
         <div>
             <div className='header-container'>
-
                 <div className='logowith-menu'>
                     <div className='menu-icon'>
                         <button className='btn' onClick={context.ShowSideBar}><MenuRoundedIcon /></button>

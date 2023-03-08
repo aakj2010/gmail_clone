@@ -6,6 +6,7 @@ import LabelImportantOutlinedIcon from '@mui/icons-material/LabelImportantOutlin
 import { SentData } from '../data/Primary'
 import ToggleContext from '../Context/ToggleContext'
 import { MdLabelImportantOutline } from 'react-icons/md';
+import MetaData from '../header/MetaData';
 
 function Sent() {
     let context = useContext(ToggleContext)
@@ -26,6 +27,7 @@ function Sent() {
 
     return (
         <div className='tabledata mailview'>
+            <MetaData title={'Sent items'} />
             <table>
                 <tbody className='tbody' style={{ borderBottom: '.5px solid black' }}>
                     {

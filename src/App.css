@@ -6,9 +6,8 @@ body {
   background-color: rgb(255, 255, 255, 0.3) !important ;
   overflow-y: hidden;
   overflow-x: hidden;
-  /* background-image: url("../src/components/images/gmailbg8.jpg"); */
-  /* background-image: url("https://thumbs.dreamstime.com/b/beautiful-big-drinking-water-droplets-light-blue-background-bright-blue-background-abstract-water-droplets-blue-194988585.jpg"); */
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7wnxPwqn6p8u1eW6N0eJIzG9nNvw49nhvJARK-nzhgFPHopXO9PMzvdXt_hJ6LpGSu2U&usqp=CAU");
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7wnxPwqn6p8u1eW6N0eJIzG9nNvw49nhvJARK-nzhgFPHopXO9PMzvdXt_hJ6LpGSu2U&usqp=CAU"); */
+  background-image: url('./Assets/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

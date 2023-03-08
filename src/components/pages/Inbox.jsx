@@ -5,6 +5,7 @@ import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
 import CheckBoxOutlineBlankOutlinedIcon from '@mui/icons-material/CheckBoxOutlineBlankOutlined';
 import { Starred, InboxData, In} from '../data/Primary'
 import { MdLabelImportantOutline} from 'react-icons/md';
+import MetaData from '../header/MetaData';
 
 
 function Inbox() {
@@ -28,11 +29,12 @@ function Inbox() {
 
   return (
     <div className='tabledata mailview'>
+      <MetaData title={'Inbox'} />
       <table>
         <tbody className='tbody' >
           {
             FilteredData.map((product) => {
-              return <tr className='tr' key={product.id} style={{ borderBottom: '.5px solid black' }}>
+              return <tr className='tr' key={product.id} style={{ borderBottom: '.5px solid lightgrey' }}>
                 <td className='tdbutton'>
                   <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
                   <button className="tdbtn"><StarOutlineOutlinedIcon fontSize='small' /></button>
