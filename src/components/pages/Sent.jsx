@@ -27,27 +27,27 @@ function Sent() {
 
     return (
         <div className='tabledata mailview'>
-            <MetaData title={'Sent items'} />
-            <table>
-                <tbody className='tbody' style={{ borderBottom: '.5px solid lightgrey' }}>
-                    {
-                        FilteredData.map((sent) => {
-                            return <tr className='tr'>
-                                <td className='tdbutton'>
-                                    <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
-                                    <button className="tdbtn"><StarOutlineOutlinedIcon fontSize='small' color='' /></button>
-                                    <button className="tdbtn"><MdLabelImportantOutline /></button>
-                                </td>
-                                <td className='tdcompany'>{sent.company}</td>
-                                <td className='tdtitle'>{sent.Title}</td>
-                                <td className='tddummy'>{sent.dummy}</td>
-                                <td className='tdtime'>{sent.TimeStamp}</td>
-                            </tr>
-                        })
-                    }
-                </tbody>
-            </table>
-        </div>
+        <MetaData title={'Sent'} />
+        <table>
+          <tbody className='tbody' >
+            {
+              FilteredData.map((product) => {
+                return <tr className='tr' key={product.id} style={{ borderBottom: '.5px solid lightgrey' }}>
+                  <td className='tdbutton'>
+                    <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
+                    <button className="tdbtn"><StarOutlineOutlinedIcon fontSize='small' /></button>
+                    <button className="tdbtn"><MdLabelImportantOutline /></button>
+                  </td>
+                  <td className='tdcompany' >{product.company}</td>
+                  <td className='tdtitle' >{product.Title}</td>
+                  <td className='tddummy' >{product.dummy}</td>
+                  <td className='tdtime'>{product.TimeStamp}</td>
+                </tr>
+              })
+            }
+          </tbody>
+        </table>
+      </div>
     )
 }
 
