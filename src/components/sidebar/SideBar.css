@@ -128,7 +128,7 @@ ul > li {
 }
 .left-icon > button:hover {
   border-radius: 15px;
-  background-color: #abd8f7;
+  background-color: lightgrey;
 }
 
 /* Collapsible SideBar */
