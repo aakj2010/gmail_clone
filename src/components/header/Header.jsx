@@ -22,6 +22,11 @@ function Header() {
                     <div className='menu-icon'>
                         <button className='btn' onClick={context.ShowSideBar}><MenuRoundedIcon /></button>
                         {/* <span className='mainmenuhide'>Main menu</span> */}
+                        <div className='absolute-div'>
+                            <button className='btn1' onClick={context.ShowSideBar}><MenuRoundedIcon /></button>
+                        </div>
+
+
                     </div>
 
                     <div className='logo'>
@@ -30,17 +35,17 @@ function Header() {
                     </div>
                 </div>
 
-                <div className="search-wrapper " >
+                {/* <div className="search-wrapper" > */}
                     <div className="search_bar">
                         <button className='search-btn btn'><SearchIcon /></button>
-                        <input type='text' 
-                        className='search-input'
-                        placeholder='Search in mails'
-                        style={{ border: 'none' }}
-                        onChange={e => context.setQuery(e.target.value)} />
+                        <input type='text'
+                            className='search-input'
+                            placeholder='Search in mails'
+                            style={{ border: 'none' }}
+                            onChange={e => context.setQuery(e.target.value)} />
                         <button className='search-btn tune-btn'><TuneIcon /></button>
                     </div>
-                </div>
+                {/* </div> */}
 
                 <div className="icons-wrapper">
                     <button className='icon-btn'><HelpOutlineIcon /></button>

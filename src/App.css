@@ -7,7 +7,7 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7wnxPwqn6p8u1eW6N0eJIzG9nNvw49nhvJARK-nzhgFPHopXO9PMzvdXt_hJ6LpGSu2U&usqp=CAU"); */
-  background-image: url('./Assets/bg.jpg');
+  /* background-image: url('./Assets/bg.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -16,16 +16,8 @@ import MetaData from '../header/MetaData';
 
 function Starred() {
   let context = useContext(ToggleContext)
-  // console.log(context.query);
   const keys = ['Title', 'company']
 
-
-  // const search = (data) => {
-  //   return data.filter(item => item.company.toLowerCase().includes(context.query) ||
-  //     item.Title.toLowerCase().includes(context.query) ||
-  //     item.dummy.toLowerCase().includes(context.query)
-  //   )
-  // }
   const search = (data) => {
     return data.filter((item) =>
       keys.some(key => item[key].toLowerCase().includes(context.query))
@@ -56,7 +48,7 @@ function Starred() {
         <tbody className='tbody' >
           {
             FilteredData.map((email) => {
-              return <tr className='tr' key={email.id} style={{ borderBottom: '.5px solid lightgrey' }}>
+              return <tr className='tr' key={email.id} >
                 <td className='tdbutton'>
                   <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
                   <button className="tdbtn"><StarIcon fontSize='small' sx={{ color: yellow[500] }} /></button>

@@ -53,7 +53,7 @@ function Sent() {
           <tbody className='tbody' >
             {
               FilteredData.map((product) => {
-                return <tr className='tr' key={product.id} style={{ borderBottom: '.5px solid lightgrey' }}>
+                return <tr className='tr' key={product.id}>
                   <td className='tdbutton'>
                     <button className="tdbtn"><CheckBoxOutlineBlankOutlinedIcon fontSize='small' /></button>
                     <button className="tdbtn"><StarOutlineOutlinedIcon fontSize='small' /></button>

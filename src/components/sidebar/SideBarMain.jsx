@@ -55,9 +55,7 @@ function SideBarMain() {
 
                     <li className="" onClick={inboxIcon}>
                         <NavLink className='list-items' to=''>
-
                             <InboxOutlinedIcon fontSize='small' className='icon' />
-                            {/* {inbox} */}
                             Inbox
                             <span className='mailcount'>{InboxData.length}</span>
                         </NavLink>
@@ -68,13 +66,17 @@ function SideBarMain() {
                             Starred
                         </NavLink>
                     </li>
-                    <li className='list-items '>
-                        <WatchLaterOutlinedIcon fontSize='small' className='icon' />
-                        Snooze
+                    <li className=''>
+                        <NavLink className='list-items' to='snooze'>
+                            <WatchLaterOutlinedIcon fontSize='small' className='icon' />
+                            Snooze
+                        </NavLink>
                     </li>
-                    <li className='list-items' >
-                        <LabelOutlinedIcon fontSize='small' className='icon' />
-                        Important
+                    <li className='' >
+                        <NavLink className='list-items' to='important'>
+                            <LabelOutlinedIcon fontSize='small' className='icon' />
+                            Important
+                        </NavLink>
                     </li>
 
                     <li className=''>
@@ -83,16 +85,20 @@ function SideBarMain() {
                             Sent
                         </NavLink>
                     </li>
-                    <li className='list-items'>
-                        <InsertDriveFileOutlinedIcon fontSize='small' className='icon' />
-                        Drafts
+                    <li className=''>
+                        <NavLink className='list-items' to='drafts'>
+                            <InsertDriveFileOutlinedIcon fontSize='small' className='icon' />
+                            Drafts
+                        </NavLink>
                     </li>
 
-                    <li className='list-items '>
-                        <LabelOutlinedIcon fontSize='small' className='icon' />
-                        Categories
+                    <li className=''>
+                        <NavLink className='list-items' to='categories'>
+                            <LabelOutlinedIcon fontSize='small' className='icon' />
+                            Categories
+                        </NavLink>
                     </li>
-                    <li className='list-items' onClick={ShowMore}>
+                    <li className=''style={{marginLeft: "18px" }} onClick={ShowMore}>
                         {classt}
                         <span className='menu-text'>{innerText}</span>
                     </li>

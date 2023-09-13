@@ -2,11 +2,11 @@ button {
   cursor: pointer;
 }
 .mailview {
-  width: 100%;
-  height: 90vh;
-  border-radius: 1.5%;
+  width: 95%;
+  height: 88vh;
+  border-radius: 16px !important;
   overflow-y: scroll;
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: #fff;
 }
 .tr {
   width: 100%;
@@ -17,13 +17,36 @@ button {
   display: flex;
   align-items: center;
   background-color: transparent;
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
-  /* box-shadow: rgba(211, 211, 211, 0.2) 0px 1px 2px 0px; */
-  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  border-bottom: 0.5px solid #ebedef;
 }
+/* .tr:nth-child(n + 7) {
+  font-weight: 400;
+  background-color: #f0f0f0;
+}
+.tr:nth-child(n + 7):hover {
+  font-weight: 400;
+  background-color: #f0f0f0;
+  border-bottom: #f0f0f0;
+  box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 0 rgb(60 64 67 / 15%);
+} */
 .tr:hover {
-  box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+  box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 0 rgb(60 64 67 / 15%);
+  border-bottom: 0.5px solid #fff;
+  border-left: none;
+}
+
+.tdcompany {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .tddummy {
   font-size: 14px;
@@ -38,12 +61,13 @@ button {
   line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.tdcompany {
-  padding-left: 0.5rem;
-  padding-right: 0.8rem;
-  font-size: 16px;
+.tdtitle {
+  /* padding-right: 0.8rem; */
+  font-size: 14px;
   font-weight: 500;
   width: 10rem;
+  max-height: 3.6em;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -51,48 +75,32 @@ button {
   line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.tdtitle {
-  padding-right: 0.8rem;
-  font-size: 16px;
-  font-weight: 500;
-  width: 10rem;
-  max-height: 3.6em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /* display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    -webkit-box-orient: vertical; */
-}
 .tdbutton {
-  /* padding: 0.5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   padding-left: 0.5rem;
   margin-bottom: 0;
-  /* padding: 0;
-  margin: 0;
-  color: #5f6368; */
+}
+.tr:hover .tdbutton button {
+  color: #444746;
 }
 
 .tdbtn {
   font-size: 20px;
   height: 32px;
   width: 32px;
-  color: #444746;
+  color: #bababa;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
 }
-.arrow-btn{
+.arrow-btn {
   font-size: 20px;
   height: 32px;
-  /* width: 32px; */
   color: #444746;
   padding: 0;
   margin: 0;
@@ -105,6 +113,10 @@ button {
 .tdbtn:hover {
   border-radius: 50%;
   background-color: lightgrey;
+  color: #444746;
+}
+.icon-primary {
+  color: #444746;
 }
 
 .tr:hover::before {
@@ -115,20 +127,17 @@ button {
   padding-left: 0.5rem;
   font-size: 12px;
   width: 4rem;
+  font-weight: 500;
 }
-/* .tdunvisible {
-  display: flex;
-  visibility: collapse;
-}
-tr + .tdunvisible:hover {
-  visibility: visible;
-} */
+
 .inbox-head {
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 0.5rem;
+  padding-left: 0.6rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 .head-icons {
   display: flex;

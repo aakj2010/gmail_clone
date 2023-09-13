@@ -8,6 +8,7 @@ import Starred from './components/pages/Starred';
 import Sent from './components/pages/Sent';
 import '../src/components/header/MediaQuery.css'
 import { HelmetProvider } from 'react-helmet-async';
+import Important from './components/pages/Important';
 
 function App() {
 
@@ -21,6 +22,10 @@ function App() {
                 <Route path='' element={<Inbox />} />
                 <Route path='starred' element={<Starred />} />
                 <Route path='sent' element={<Sent />} />
+                <Route path='snooze' element={<Sent />} />
+                <Route path='drafts' element={<Sent />} />
+                <Route path='important' element={<Important />} />
+                <Route path='categories' element={<Sent />} />
               </Route>
             </Routes>
           </ToggleProvider>
